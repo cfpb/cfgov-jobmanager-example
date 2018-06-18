@@ -49,7 +49,7 @@ class JobListingList(OpenJobListingsMixin, organisms.ModelList):
         value['careers'] = self.get_queryset(value)
         value.update(context or {})
 
-        template = '_includes/organisms/job-listing-list.html'
+        template = 'jobmanager/_includes/organisms/job-listing-list.html'
         return render_to_string(template, value)
 
 

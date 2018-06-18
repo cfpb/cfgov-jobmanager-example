@@ -133,7 +133,7 @@ class JobListingPage(CFGOVPage):
         ObjectList(CFGOVPage.settings_panels, heading='Configuration'),
     ])
 
-    template = 'job-description-page/index.html'
+    template = 'jobmanager/job-description-page/index.html'
 
     objects = PageManager()
 
